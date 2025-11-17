@@ -547,6 +547,235 @@
             0%, 100% { transform: rotate(-5deg); }
             50% { transform: rotate(5deg); }
         }
+        
+        /* Mobile Responsive Styles */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .poster {
+                padding: 30px 20px;
+                border-width: 2px;
+            }
+            
+            .title {
+                font-size: 2.2em;
+                letter-spacing: 1px;
+            }
+            
+            .subtitle {
+                font-size: 1.3em;
+            }
+            
+            .company {
+                font-size: 1em;
+            }
+            
+            .pool-emoji {
+                font-size: 2.5em;
+            }
+            
+            .christmas-decorations {
+                font-size: 2em;
+            }
+            
+            .team-photo {
+                max-width: 100%;
+                border-width: 2px;
+            }
+            
+            .ornaments {
+                gap: 10px;
+            }
+            
+            .ornament {
+                width: 30px;
+                height: 30px;
+                font-size: 1.2em;
+            }
+            
+            .rounds-container {
+                padding: 20px 15px;
+            }
+            
+            .rounds-title {
+                font-size: 1.3em;
+                margin-bottom: 20px;
+            }
+            
+            .round {
+                padding: 12px 15px;
+            }
+            
+            .round-label {
+                font-size: 1em;
+            }
+            
+            .round-dates {
+                font-size: 0.95em;
+            }
+            
+            .round-header {
+                padding: 12px 15px;
+                margin: -12px -15px;
+                flex-wrap: wrap;
+            }
+            
+            .dropdown-arrow {
+                font-size: 1em;
+                margin-left: 10px;
+            }
+            
+            .deadline-note {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+            
+            .round-matchup {
+                padding: 8px 10px;
+                font-size: 0.85em;
+                grid-template-columns: 1fr auto 1fr;
+            }
+            
+            .round-matchup span {
+                word-break: break-word;
+            }
+            
+            .vs-small {
+                padding: 0 5px;
+                font-size: 0.8em;
+            }
+            
+            .knockout .round-label {
+                font-size: 1.1em;
+            }
+            
+            .important-note {
+                padding: 15px;
+            }
+            
+            .important-note-title {
+                font-size: 1.1em;
+            }
+            
+            .important-note-text {
+                font-size: 1em;
+            }
+            
+            .participants-container {
+                padding: 20px 15px;
+            }
+            
+            .gift-box {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .gift-base {
+                width: 150px;
+                height: 110px;
+            }
+            
+            .gift-lid {
+                width: 165px;
+                height: 40px;
+            }
+            
+            .ribbon-vertical {
+                width: 25px;
+                height: 150px;
+                left: 62px;
+            }
+            
+            .ribbon-horizontal {
+                width: 150px;
+                height: 25px;
+                top: 62px;
+            }
+            
+            .bow {
+                font-size: 2.5em;
+            }
+            
+            .click-text {
+                font-size: 1.1em;
+            }
+            
+            .player-name {
+                font-size: 1em;
+                padding: 10px 15px;
+            }
+            
+            .footer {
+                margin-top: 30px;
+                padding-top: 20px;
+            }
+            
+            .good-luck {
+                font-size: 1.1em;
+            }
+            
+            .christmas-footer {
+                font-size: 1.5em;
+            }
+            
+            .lights {
+                gap: 5px;
+            }
+            
+            .light {
+                width: 12px;
+                height: 12px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .title {
+                font-size: 1.8em;
+            }
+            
+            .subtitle {
+                font-size: 1.1em;
+            }
+            
+            .round-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            
+            .dropdown-arrow {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            
+            .dropdown-arrow.rotated {
+                transform: translateY(-50%) rotate(-180deg);
+            }
+            
+            .round-dates {
+                font-size: 0.9em;
+            }
+            
+            .round-matchup {
+                grid-template-columns: 1fr;
+                gap: 5px;
+                text-align: center;
+            }
+            
+            .round-matchup span:first-child,
+            .round-matchup span:last-child {
+                text-align: center;
+            }
+            
+            .vs-small {
+                display: block;
+                padding: 3px 0;
+            }
+        }
     </style>
 </head>
 <body>
